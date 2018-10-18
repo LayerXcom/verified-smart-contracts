@@ -65,7 +65,7 @@
       </evm>
 
       <network>
-        <activeAccounts> SetItem(ACCT_ID) </activeAccounts>
+        <activeAccounts> SetItem(ACCT_ID) ACCTS:Set </activeAccounts>
         <accounts>
           <account>
             <acctID> ACCT_ID </acctID>
@@ -76,7 +76,13 @@
             </storage>
             <nonce> ACCT_NONCE </nonce>
           </account>
-          ...
+            (.Bag => 
+              <account>
+                <acctID> {NEWACCOUNTADDR} </acctID>
+                ...
+              </account>              
+            )
+            ...
         </accounts>
         <txOrder> _ </txOrder>
         <txPending> _ </txPending>
