@@ -189,6 +189,7 @@ plasma_files:=operator-spec.k \
               submitBlock-failure-spec.k \
               deposit-success-spec.k \
               deposit-failure-spec.k \
+              getChildChain-spec.k \
               getDepositBlock-spec.k
 
 # FIXME: restore the skipped specs
