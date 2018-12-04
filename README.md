@@ -1,6 +1,9 @@
 # LayerX Internal Workshop
 ## Build
+
+(mac)
 ```
+brew install automake libtool gmp mpfr pkg-config pandoc maven opam z3
 cd erc20/zeppelin
 make
 ```
